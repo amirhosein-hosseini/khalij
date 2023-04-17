@@ -1,0 +1,212 @@
+/* user-dashbord article styles */
+
+.user-dashbord{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 90%;
+    margin: 0 auto;
+    gap: 24px;
+    margin-top: 48px;
+}
+.user-dashbord-list{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.user-dashbord-user-image{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 24px;
+    border-radius: 8px;
+    background: white;
+    margin-bottom: 24px;
+    border: 1px solid rgb(0, 0, 0,10%);
+    width: 100%;
+}
+.user-dashbord-user-image p{
+    font-family: "bold";
+    font-size: 20px;
+    color: #202635;
+}
+.user-dashbord-user-image img{
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+}
+.user-dashbord-list-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+    gap: 24px;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid rgb(0, 0, 0,10%);
+    width: 100%;
+}
+.user-dashbord-list-list a{
+    font-family: "bold";
+    font-size: 18px;
+    text-decoration: none;
+    color: #828182;
+}
+.user-dashbord-list-list a.active{
+    color: #202635;
+}
+.user-dashbord-desc{
+    flex: 3;
+    width: 100%;
+}
+.user-dashbord-desc-pishkhan{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 32px;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid rgb(0, 0, 0,10%);
+}
+.pishkhan-desc p{
+    font-family: "semi-bold";
+    font-size: 20px;
+    color: #636772;
+    margin-bottom: 20px;
+    text-align: right;
+    direction: rtl;
+    line-height: 27px;
+}
+.pishkhan-items{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    gap: 24px;
+    direction: rtl;
+}
+.pishkhan-items a{
+    text-decoration: none;
+    text-align: center;
+    padding: 52px 0px;
+    background: rgb(255, 129, 50,10%);
+    border-radius: 8px;
+    font-family: "bold";
+    font-size: 20px;
+    color: #FF8032;
+}
+
+
+
+/* user-panel-adress form styles */
+
+.user-dashbord-desc-form{
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid rgb(0, 0, 0,10%);
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    width: 100%;
+    margin-top: 25px;
+    gap: 8px;
+}
+.form-group.name{
+    flex-direction: row-reverse;
+    width: 100%;
+    gap: 24px;
+}
+.form-grop-inside-name{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 8px;
+}
+.form-group label{
+    font-family: "semi-bold";
+    font-size: 15px;
+    color: #202635;
+    direction: rtl;
+}
+.form-group label span{
+    color: red;
+}
+.form-group input{
+    background: #F8F9FD;
+    border-radius: 4px;
+    border: 1px solid #E4E5E9;
+    padding: 10px 0px;
+}
+.form-group-desc h3{
+    font-family: "bold";
+    font-size: 24px;
+    color: #202635;
+    margin-bottom: 16px;
+    margin-top: 8px;
+}
+.form-group-desc textarea{
+    background: #F8F9FD;
+    border-radius: 4px;
+    border: 1px solid #E4E5E9;
+    resize: none;
+}
+
+
+
+@media only screen and (max-width:768px){
+    .user-dashbord{
+        flex-direction: column;
+    }
+    .user-dashbord-desc{
+        flex: 1;
+        width: 100%;
+    }
+    .user-dashbord-list{
+        flex: 1;
+        width: 100%;
+    }
+    .pishkhan-items{
+        grid-template-columns: repeat(1,minmax(0,1fr));
+    }
+    .user-dashbord-user-image p{
+        font-size: 18px;
+    }
+    .user-dashbord-list-list a{
+        font-size: 16px;
+    }
+    .pishkhan-desc p{
+        font-size: 16px;
+    }
+    .pishkhan-items a{
+        font-size: 18px;
+    }
+    .payment-form{
+        flex: 1;
+        width: 100%;
+    }
+    .payment-desc{
+        flex: 1;
+    }
+    .form-group.name{
+        flex-direction: column;
+    }
+    .form-group label{
+        font-size: 12px;
+    }
+    .form-group h3{
+        font-size: 20px;
+    }
+}
+

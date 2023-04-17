@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/globalstyle.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/payment.css">
+    <script src="main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="nav">
+        <div class="container">
+            <div class="nav-wrapper">
+                <nav>
+                    <div class="nav-icon" onclick="navshow()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"  viewBox="0 0 24 24" fill="none" stroke="currentColor"   stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="3" y1="12" x2="21" y2="12" />
+                            <line x1="3" y1="6" x2="21" y2="6" />
+                            <line x1="3" y1="18" x2="21" y2="18" />
+                        </svg>
+                    </div>
+                    <div class="nav-overlay" onclick="navclose()" id="nav-overlay"></div>
+                    <ul class="nav-list" id="nav-list">
+                        <div class="nav-close" onclick="navclose()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="18" y1="6" x2="6" y2="18" />
+                                <line x1="6" y1="6" x2="18" y2="18" />
+                            </svg>
+                        </div>
+                        <div class="nav-list-wrapper">
+                            <div class="nav-list-wrapper-logo">
+                                <div class="header-logo">
+                                    <img src="images/header-logo.png" alt="header-logo">
+                                </div>
+                            </div>
+                            <div class="nav-list-wrapper-center">
+                                <li onmouseenter="menuitem('home')" onmouseleave="menuitemleave()">
+                                    <a href="#" class="nav-link header-item-active">خانه</a>
+                                </li>
+                                <li onmouseenter="menuitem('services')" onmouseleave="menuitemleave()">
+                                    <a href="#" class="nav-link">فروشگاه</a>
+                                </li>
+                                <li onmouseenter="menuitem('about')" onmouseleave="menuitemleave()">
+                                    <a href="#" class="nav-link">درباره ما</a>
+                                </li>
+                                <li onmouseenter="menuitem('projects')" onmouseleave="menuitemleave()">
+                                    <a href="#" class="nav-link">مقالات</a>
+                                </li>
+                                <li onmouseenter="menuitem('contact')" onmouseleave="menuitemleave()">
+                                    <a href="#" class="nav-link">تماس باما</a>
+                                </li>
+                            </div>
+                            <div class="header-left">
+                                <div class="basket">
+                                    <a href="#">
+                                        <img src="images/basket.png" alt="basket">
+                                    </a>
+                                </div>
+                                <a class="login-button" href="#">
+                                    <img src="images/person.png" alt="icon">
+                                    حساب کاربری
+                                </a>
+                            </div>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+
+    <article class="other-page-hero">
+        <section class="other-page-hero-back">
+            <div class="other-page-hero-title">
+                <h1>
+                    فروشگاه
+                </h1>
+            </div>
+            <div class="other-page-hero-address">
+                <p>خانه - فروشگاه</p>
+            </div>
+        </section>
+    </article>
+
+
+
+
+    <article class="payment">
+        <section class="payment-form">
+            <form>
+                <div class="form-group name">
+                    <div class="form-grop-inside-name">
+                        <label>نام<span>*</span></label>
+                        <input type="text">
+                    </div>
+                    <div class="form-grop-inside-name">
+                        <label>نام خانوادگی<span>*</span></label>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>استان<span>*</span></label>
+                    <input type="text">
+                </div>
+                <div class="form-group">
+                    <label>شهر<span>*</span></label>
+                    <input type="text">
+                </div>
+                <div class="form-group">
+                    <label>آدرس<span>*</span></label>
+                    <input type="text">
+                </div>
+                <div class="form-group">
+                    <label>کدپستی<span>*</span></label>
+                    <input type="text">
+                </div>
+                <div class="form-group">
+                    <label>تلفن<span>*</span></label>
+                    <input type="number">
+                </div>
+                <div class="form-group">
+                    <label>آدرس ایمیل<span>*</span></label>
+                    <input type="email">
+                </div>
+                <div class="form-group form-group-desc">
+                    <h3>توضیحات تکمیلی</h3>
+                    <label>توضیحات سفارش(اختیاری)</label>
+                    <textarea rows="10"></textarea>
+                </div>
+            </form>
+        </section>
+        <section class="payment-desc">
+            <div class="payment-desc-header"><h3>سفارش شما</h3></div>
+            <div class="payment-desc-wrapper">
+                <table>
+                    <tr>
+                        <th>
+                            جمع جز
+                        </th>
+                        <th>
+                            محصول
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            13،000،000 تومان
+                        </td>
+                        <td>
+                            گلدان دکوری مدل اونیکسگلدان دکوری مدل اونیکس
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            13،000،000 تومان
+                        </td>
+                        <td>
+                            گلدان دکوری مدل اونیکسگلدان دکوری مدل اونیکس
+                        </td>
+                    </tr>
+                </table>
+                <div class="payment-desc-all">
+                    <h6>
+                        جمع کل
+                    </h6>
+                    <p>
+                        تومان 13،000،000
+                    </p>
+                </div>
+                <div class="payment-desc-pay">
+                    <a href="#">
+                        ثبت سفارش
+                    </a>
+                </div>
+            </div>
+        </section>
+    </article>
+
+
+
+
+
+    <footer class="footer">
+        <section class="footer-right">
+            <div class="footer-right-logo">
+                <img src="images/footer-logo.png" alt="footer-logo">
+            </div>
+            <div class="footer-right-desc">
+                <p>
+                    فروشگاه خلیج فارس،فروشگاه دست سازه های هنرمندان ایرانی
+                </p>
+                <p>
+                    نشانی: قزوین،بلوار آزادگان،جنب مبل خلیج فارس
+                </p>
+                <p>
+                    تلفن: 02833677779 
+                </p>
+            </div>
+        </section>
+        <section class="footer-center">
+            <div class="footer-center-header">
+                <h4>
+                    دسترسی سریع
+                </h4>
+            </div>
+            <div class="footer-center-links">
+                <a href="#">صفحه اصلی</a>
+                <a href="#">فروشگاه</a>
+                <a href="#">حساب کاربری</a>
+                <a href="#">درباره ما</a>
+                <a href="#">تماس باما</a>
+                <a href="#">شرایط و قوانین ارسال</a>
+            </div>
+        </section>
+        <section class="footer-left">
+            <div class="footer-left-header">
+                <h4>
+                    مجوز های دریافت شده
+                </h4>
+            </div>
+            <div class="enamad">
+                <a href="#">
+                    <img src="images/enamad.png" alt="enamad">
+                </a>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

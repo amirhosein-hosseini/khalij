@@ -1,0 +1,180 @@
+/* payment article style */
+
+.payment{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 24px;
+    margin-top: 42px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 42px;
+    gap: 24px;
+    align-items: flex-start;
+}
+.payment-form{
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid rgb(0, 0, 0,10%);
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    width: 100%;
+    margin-top: 25px;
+    gap: 8px;
+}
+.form-group.name{
+    flex-direction: row-reverse;
+    width: 100%;
+    gap: 24px;
+}
+.form-grop-inside-name{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 8px;
+}
+.form-group label{
+    font-family: "semi-bold";
+    font-size: 15px;
+    color: #202635;
+    direction: rtl;
+}
+.form-group label span{
+    color: red;
+}
+.form-group input{
+    background: #F8F9FD;
+    border-radius: 4px;
+    border: 1px solid #E4E5E9;
+    padding: 10px 0px;
+}
+.form-group-desc h3{
+    font-family: "bold";
+    font-size: 24px;
+    color: #202635;
+    margin-bottom: 16px;
+    margin-top: 8px;
+}
+.form-group-desc textarea{
+    background: #F8F9FD;
+    border-radius: 4px;
+    border: 1px solid #E4E5E9;
+    resize: none;
+}
+.payment-desc{
+    flex: 2;
+    background: white;
+    padding: 24px;
+    border-radius: 8px;
+    border: 1px solid rgb(0, 0, 0,10%);
+}
+.payment-desc-header h3{
+    text-align: center;
+    font-family: "bold";
+    font-size: 24px;
+    color: #202635;
+    margin-bottom: 12px;
+}
+.payment-desc-wrapper{
+    padding: 24px;
+    background: rgb(255, 147, 79,5%);
+    border-radius: 8px;
+    border: 1px solid rgb(0, 0, 0,5%);
+}
+.payment-desc-wrapper table{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.payment-desc-wrapper table tr{
+    border-bottom: 1px solid rgb(0, 0, 0,20%);
+}
+.payment-desc-wrapper table tr th{
+    padding: 16px;
+    font-family: "semi-bold";
+    font-size: 22px;
+    color: #202635;
+}
+.payment-desc-wrapper table tr td{
+    padding: 16px;
+    text-align: right;
+    font-family: "semi-bold";
+    font-size: 16px;
+    color: #2D3134;
+}
+.payment-desc-all{
+    margin-top: 18px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+.payment-desc-all h6{
+    font-family: "semi-bold";
+    font-size: 20px;
+    color: #202635;
+}
+.payment-desc-all p{
+    font-family: "bold";
+    font-size: 24px;
+    color: #202635;
+    direction: rtl;
+}
+.payment-desc-pay a{
+    margin-top: 40px;
+    font-family: "bold";
+    font-size: 24px;
+    color: white;
+    padding: 11px 0px;
+    width: 100%;
+    background: #FF7B29;
+    border-radius: 4px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+@media only screen and (max-width:768px){
+    .payment{
+        flex-direction: column;
+    }
+    .payment-form{
+        flex: 1;
+        width: 100%;
+    }
+    .payment-desc{
+        flex: 1;
+    }
+    .form-group.name{
+        flex-direction: column;
+    }
+    .form-group label{
+        font-size: 12px;
+    }
+    .form-group h3{
+        font-size: 20px;
+    }
+    .payment-desc-header h3{
+        font-size: 20px;
+    }
+    .payment-desc-wrapper table tr th{
+        font-size: 18px;
+    }
+    .payment-desc-wrapper table tr td{
+        font-size: 14px;
+    }
+    .payment-desc-all p{
+        font-size: 20px;
+    }
+    .payment-desc-all h6{
+        font-size: 17px;
+    }
+    .payment-desc-pay a{
+        font-size: 20px;
+    }
+}
