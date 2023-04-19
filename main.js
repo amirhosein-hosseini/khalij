@@ -46,3 +46,9 @@ const productremove = () =>{
 const smallimage = (small) =>{
     document.getElementById("big-image").src = small.src;
 }
+const activelogin = () =>{
+        document.getElementById("login-article").classList.remove("login-none")
+    }
+    const deactivelogin = () =>{
+        document.getElementById("login-article").classList.add("login-none")
+    }
