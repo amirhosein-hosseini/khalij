@@ -124,6 +124,7 @@
 @media only screen and (max-width:768px){
     .hero{
         padding-right: 10px;
+        flex-direction: column;
     }
     .hero-banner{
         flex: 1;
@@ -132,6 +133,9 @@
     .hero-desc{
         flex: 1;
         width: 100%;
+    }
+    .hero-desc-header{
+        margin-top: 20px;
     }
     .hero-desc-header h1{
         font-size: 30px;
@@ -142,12 +146,19 @@
     .hero-desc h3{
         font-size: 20px;
     }
+    .hero-search-wrapper{
+        width: 97%;
+        margin: 0 auto;
+    }
     .hero-search-wrapper input{
-        width: 170px;
+        width: 100%;
         font-size: 15px;
     }
     .hero-search-wrapper img{
         width: 20px;
+    }
+    .hero-desc h3{
+        margin-top: 0px;
     }
 }
 
