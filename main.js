@@ -31,7 +31,6 @@ const productadd = () =>{
     const newvalue = oldvalue + 1;
     document.getElementById("product-number").innerHTML = newvalue; 
     document.getElementById("counterinput").value = newvalue;
-    console.log(document.getElementById("counterinput").value)
 }
 const productremove = () =>{
     const oldvalue = parseInt(document.getElementById("product-number").innerHTML);
@@ -41,14 +40,13 @@ const productremove = () =>{
     }
     document.getElementById("product-number").innerHTML = newvalue; 
     document.getElementById("counterinput").value = newvalue;
-    console.log(document.getElementById("counterinput").value)
 }
 const smallimage = (small) =>{
     document.getElementById("big-image").src = small.src;
 }
 const activelogin = () =>{
-        document.getElementById("login-article").classList.remove("login-none")
-    }
-    const deactivelogin = () =>{
-        document.getElementById("login-article").classList.add("login-none")
-    }
+    document.getElementById("login-article").classList.remove("login-none")
+}
+const deactivelogin = () =>{
+    document.getElementById("login-article").classList.add("login-none")
+}
