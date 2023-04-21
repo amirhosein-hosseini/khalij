@@ -89,11 +89,20 @@ html{
 }
 .basket{
     overflow: hidden;
-    max-width: 24px;
+    max-width: 34px;
+    position: relative;
 }
 .basket img{
     object-fit: cover;
     width: 100%;
+}
+.basket p{
+    position: absolute;
+    left: 3px;
+    top: 1px;
+    color: white;
+    font-size: 15px;
+    font-family: "regular";
 }
 .login-button{
     display: flex;
@@ -398,7 +407,7 @@ body{
         margin-top: 15px;
         width: 100%;
     }
-    .login-form-button a{
+    .login-form-button button{
         width: 100%;
         font-family: "bold";
         font-size: 24px;
@@ -413,4 +422,22 @@ body{
     }
     .login.login-none{
         display: none;
+    }
+    .sign-up-none{
+        display: none;
+    }
+    .login-form-button p{
+        font-family: "semi-bold";
+        text-align: center;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .show-password{
+        text-align: right;
+        margin-top: 5px;
+    }
+    .show-password label{
+        font-family: "regular";
+        font-size: 15px;
+        color: black;
     }

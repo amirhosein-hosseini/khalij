@@ -26,9 +26,13 @@ const servicesshow = () =>{
 const servicesclose = () =>{
     document.getElementById("about-item-show").classList.remove("showservices");
 }
+var productrange = 8;
 const productadd = () =>{
     const oldvalue = parseInt(document.getElementById("product-number").innerHTML);
     const newvalue = oldvalue + 1;
+    if (newvalue > productrange){
+        newvalue = oldvalue;
+    }
     document.getElementById("product-number").innerHTML = newvalue; 
     document.getElementById("counterinput").value = newvalue;
 }
@@ -49,4 +53,20 @@ const activelogin = () =>{
 }
 const deactivelogin = () =>{
     document.getElementById("login-article").classList.add("login-none")
+}
+const signupshow = () =>{
+    document.getElementById("login-article").classList.add("login-none");
+    document.getElementById("sign-up-article").classList.remove("sign-up-none");
+}
+const loginshow = () =>{
+    document.getElementById("sign-up-article").classList.add("sign-up-none");
+    document.getElementById("login-article").classList.remove("login-none");
+}
+const showpassword = () => {
+    var x = document.getElementById("password");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
 }
