@@ -336,7 +336,14 @@ html{
     font-size: 15px;
     color: #DADADA;
 }
-
+@media only screen and (max-width:768px){
+    .other-page-hero-title h1{
+        font-size: 24px;
+    }
+    .other-page-hero-address p{
+        font-size: 12px;
+    }
+}
 
 /* login article style */
 body{
@@ -441,3 +448,10 @@ body{
         font-size: 15px;
         color: black;
     }
+
+    @media only screen and (max-width:768px){
+        .login-wrapper{
+            width: 350px;
+        }
+    }
+    

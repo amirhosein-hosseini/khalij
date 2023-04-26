@@ -438,3 +438,17 @@
         font-size: 14px;
     }
 }
+
+.user-panel-button a{
+    background: #FF7B29;
+    padding: 15px 20px;
+    font-family: "bold";
+    font-size: 15px;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+}
+.user-panel-button{
+    text-align: right;
+    margin-top: 30px;
+}

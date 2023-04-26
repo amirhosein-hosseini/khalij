@@ -101,17 +101,32 @@
     border: 1px solid #575A5D;
     border-radius: 5px;
 }
+.special-item-footer-price{
+    display: flex;
+    flex-direction: column;
+}
 .special-item-footer-price p{
     font-family: "semi-bold";
     font-size: 16px;
     color: #2D3134;
     direction: rtl;
 }
+.special-item-footer-price p.discount{
+    font-family: "semi-bold";
+    font-size: 16px;
+    color: #FF7B29;
+    direction: rtl;
+    text-decoration: line-through;
+}
 
 
 @media only screen and (max-width:768px){
     .shop{
         flex-direction: column;
+        margin-top: 48px;
+    }
+    .shop-filter{
+        gap: 28px;
     }
     .shop-filter-grouping-title h3{
         font-size: 20px;
@@ -121,6 +136,20 @@
         padding: 11px 15px;
     }
     .shop-items{
-        grid-template-columns: repeat(1,minmax(0,1fr));
+        grid-template-columns: repeat(2,minmax(0,1fr));
+        gap: 12px;
+    }
+    .special-item{
+        padding: 8px;
+    }
+    .special-item-desc p{
+        font-size: 12px;
+        margin-top: 6px;
+    }
+    .special-item-footer{
+        margin-top: 24px;
+    }
+    .special-item-footer-button p{
+        padding: 4px 6px;
     }
 }

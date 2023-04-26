@@ -53,6 +53,7 @@ const activelogin = () =>{
 }
 const deactivelogin = () =>{
     document.getElementById("login-article").classList.add("login-none")
+    document.getElementById("sign-up-article").classList.add("sign-up-none");
 }
 const signupshow = () =>{
     document.getElementById("login-article").classList.add("login-none");

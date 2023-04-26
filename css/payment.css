@@ -68,6 +68,13 @@
     border: 1px solid #E4E5E9;
     resize: none;
 }
+.form-group-desc textarea::placeholder{
+    font-family: "regular";
+    font-size: 16px;
+    color: #9B9DA7;
+    text-align: right;
+    padding: 16px;
+}
 .payment-desc{
     flex: 2;
     background: white;
