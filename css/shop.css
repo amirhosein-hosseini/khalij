@@ -66,6 +66,15 @@
     padding: 16px;
     border-radius: 4px;
     background: white;
+    transition:0.3s;
+}
+.special-item:hover{
+    transform:translateY(-8px);
+}
+.special-item:hover .special-item-footer-button p{
+	background:#FF7B29;
+	border:none;
+	color:white;
 }
 .shop-items-filter{
     display: flex;
@@ -95,6 +104,7 @@
     gap: 24px;
 }
 .special-item-image{
+    border-radius:8px;
     width: 100%;
     overflow: hidden;
 }
